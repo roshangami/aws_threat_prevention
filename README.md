@@ -10,7 +10,7 @@ A GuardDuty finding represents a potential security issue detected within the ne
 
 
 ## Brief Steps
-**Detailed AWS Lab setup, attack and remediation in working is available [here](https://)** 
+**Detailed AWS Lab setup, attack and remediation in working is available [here](https://medium.com/@roshan.kumar202/aws-threat-detection-and-automated-prevention-management-d7761eb42bab)** 
 1. Create findings for AWS GuardDuty.
 2. Create CloudWatch rules to invoke Targets based on GuardDuty findings.
 3. Select Target as SNS and Lambda to invoke when an event matches your event pattern or when the schedule is triggered.
