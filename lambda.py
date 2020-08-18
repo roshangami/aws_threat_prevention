@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     print(f"Instance ID: {instance_id}")
 
     if finding_type == 'Recon:EC2/Portscan':
-         victim_ec2 = ec2.Instance(instance_id)
+        victim_ec2 = ec2.Instance(instance_id)
         # If any suspicious activity is detected by GuardDuty then the affected ec2 will be moved to this security group
         victim_ec2.modify_attribute(Groups=[isolated_sg])
 
